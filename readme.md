@@ -73,4 +73,4 @@
 
 1. 修改应用程序名称。如：把 `mini-electron.exe` 改为 `DesktopNaotu.exe`
 2. 修改图标和文件信息。通过 `reshacker` 来修改，360 可能会提示病毒操作，全部允许即可。
-3. 完成，我把示例程序放到 `release` 中，感兴趣的可以下载查看。
+3. 完成，我把示例程序放到 [Release](https://github.com/topcss/miniblink-electron/releases) 中，感兴趣的可以下载查看。
