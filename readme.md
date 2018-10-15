@@ -29,7 +29,9 @@
 
 下载后，解压文件，将 `electron` 必要的几个文件或者文件夹拷贝出来。
 
-`miniblink` 替换 `electron` 用到 3 个文件：文件 node.dll 和 `mini-electron.exe` 文件夹 resources。我们把这个几个文件拷贝到 `D:\myApp\` 中
+`miniblink` 替换 `electron` 用到 3 个文件：文件 `node.dll` 和 `mini-electron.exe` 文件夹 resources。
+
+我们把这个几个文件拷贝到 `D:\myApp\` 中：
 
 ``` text
 - D:\myApp\
@@ -41,9 +43,9 @@
 
 ### 3.3 从 electron 迁移到 miniblink
 
-我们拿 [桌面版脑图](https://github.com/NaoTu/DesktopNaotu) 来举例，下载最新的 [桌面版脑图编译文件](https://github.com/NaoTu/DesktopNaotu/releases) 。
+拿 [桌面版脑图](https://github.com/NaoTu/DesktopNaotu) 来举例，下载最新的 [桌面版脑图编译文件](https://github.com/NaoTu/DesktopNaotu/releases) 。
 
-下载文件 `DesktopNaotu-win32-ia32.zip` ，解压后可以看到 `桌面版脑图` 编译后的目录结构如下：
+我们下载文件 `DesktopNaotu-win32-ia32.zip` ，解压后可以看到 `桌面版脑图` 编译后的目录结构如下：
 
 ``` text
 - DesktopNaotu-win32-ia32\
@@ -53,7 +55,7 @@
     - electron.asar
 ```
 
-我们把资源文件夹下的 `electron.asar` 和 `app` 拷贝到，`miniblink` 的 `resources` 下。
+我们把资源文件夹 `resources\` 下的 `electron.asar` 和 `app` 拷贝到，`miniblink` 的 `resources\` 下。
 
 ``` text
 - D:\myApp\
@@ -69,6 +71,6 @@
 
 ### 3.4 优化应用程序
 
-1. 修改名称。如：把 `mini-electron.exe` 改为 `DesktopNaotu.exe`
+1. 修改应用程序名称。如：把 `mini-electron.exe` 改为 `DesktopNaotu.exe`
 2. 修改图标和文件信息。通过 `reshacker` 来修改，360 可能会提示病毒操作，全部允许即可。
-3. 结束
+3. 完成
